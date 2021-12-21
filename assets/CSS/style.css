@@ -128,19 +128,48 @@ main section {
     margin-bottom: 1rem;
 }
 
-#main-image {
-    width: 90%;
+#recent-work a {
+    margin: 1rem;
 }
 
-#main-image img {
-    height: 200px;
+/*#recent-work .small-image {
+
+}*/
+
+.small-image {
+    width: 40%;
+}
+
+.small-image > div {
+    height: 100px;
+    width: 100%;
+    opacity: 50%;
+    margin: 0;
     background-image: url("https://i.imgur.com/lzwSM0W.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}*/
+}
 
-#ma
+
+#main-image {
+    width: 90%;
+}
+
+#main-image > div {
+    height: 200px;
+    width: 100%;
+    opacity: 50%;
+    margin: 0;
+    background-image: url("https://i.imgur.com/lzwSM0W.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.small-image:hover > div, #main-image:hover > div {
+    opacity: 100%;
+}
 
 @media screen and (max-width: 768px){
 
@@ -161,10 +190,12 @@ main section {
 
     /*I'm adjusting the main content block to put the section titles (*/
     main aside {
+        margin-right: 0;
         width: 90%;
     }
 
     main aside h1 {
+        width: 100%;
         text-align: center;
     }
 
@@ -183,6 +214,10 @@ main section {
     screen real estate on mobile devices*/
     .hero-image {
         height: 150px;
+    }
+
+    .small-image {
+        width: 90%;
     }
 
 }
