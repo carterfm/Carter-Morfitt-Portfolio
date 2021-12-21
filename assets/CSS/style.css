@@ -1,0 +1,81 @@
+/*I'm not 100% sure where the :root selector should go as yet, 
+so I'm just placing it at the top*/
+:root {
+    /*Laying out the colors I'll use to style the app. I'll be using variables for these
+    for the sake of convenience.*/
+    --dark: #31343d;
+    --light-blue: #92cccd;
+    --grey-blue: #475b79; 
+    --off-white: #ededf6;
+}
+
+* {
+    background-color: var(--dark);
+    padding: 0;
+    margin: 0;
+
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+
+    padding: 1.25em;
+    padding-left: 0px;
+}
+
+header h1 {
+    flex: 0 0 300px;
+    padding: 10px 20px;
+    background-color: var(--light-blue);
+    font-size: 2.5em;
+    text-align: right;
+}
+
+header nav {
+    display: flex;
+    flex: 0 0 40%;
+    margin-top: 2em;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    display: inline;
+
+    font-size: 1.5em;
+    color: var(--light-blue);
+    margin-right: .5em;
+
+    text-decoration-thickness: 0.2em;
+}
+
+main {
+    padding: 10px;
+    margin: 0;
+}
+
+main, main p {
+    background-color: var(--off-white);
+}
+
+@media screen and (max-width: 768px){
+
+    /*For the mobile layout, I want the header to be above the navbar and for both
+    to be centered. Changing header's justify-content property to center and 
+    header nav's flex-basis to 80% accomplishes this.*/
+    header {
+        justify-content: center;
+    }
+
+    header nav {
+        flex-basis: 80%;
+    }
+}
+
+
+
