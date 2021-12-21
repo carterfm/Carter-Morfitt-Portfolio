@@ -25,7 +25,7 @@ header {
     justify-content: space-between;
     align-content: center;
 
-    padding: 1.25em;
+    padding: 1.25rem;
     padding-left: 0px;
 }
 
@@ -33,23 +33,24 @@ header h1 {
     flex: 0 0 300px;
     padding: 10px 20px;
     background-color: var(--light-blue);
-    font-size: 2.5em;
+    font-size: 2.5rem;
     text-align: right;
 }
 
 header nav {
     display: flex;
-    flex: 0 0 40%;
-    margin-top: 2em;
+    flex: 0 0 50%;
+    margin-top: 2rem;
     justify-content: space-evenly;
 }
 
+/*I've set up the nave bar to appear in-line with the header*/
 header nav a {
     display: inline;
 
-    font-size: 1.5em;
+    font-size: 1.25rem;
     color: var(--light-blue);
-    margin-right: .5em;
+    margin-right: .5rem;
 
     text-decoration-thickness: 0.2em;
 }
@@ -63,6 +64,32 @@ main, main p {
     background-color: var(--off-white);
 }
 
+.hero-image {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    background-image: url("../images/patrick-tomasso-QMDap1TAu0g-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+.hero-text h1  {
+    width: 300px;
+    padding: 10px;
+    background-color: var(--light-blue);
+
+    font-size: 1.5rem;
+    color: var(--dark);
+}
+
 @media screen and (max-width: 768px){
 
     /*For the mobile layout, I want the header to be above the navbar and for both
@@ -72,9 +99,18 @@ main, main p {
         justify-content: center;
     }
 
+    header h1 {
+        text-align: center;
+    }
+
     header nav {
         flex-basis: 80%;
     }
+
+    .hero-image {
+        height: 150px;
+    }
+
 }
 
 
