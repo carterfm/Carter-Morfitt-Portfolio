@@ -58,6 +58,10 @@ header nav a {
     text-decoration-thickness: 0.2rem;
 }
 
+header nav a:hover {
+    color: white;
+}
+
 /*Now for the code handling the main content blocks of the page*/
 main {
     display: flex;
@@ -198,6 +202,10 @@ look I desired. I might return later and work on this some more.*/
     font-size: 1.25rem;
     color: var(--grey-blue);
     text-decoration-thickness: 0.2rem;
+}
+
+#contact-me a:hover {
+    color: var(--light-blue);
 }
 
 
