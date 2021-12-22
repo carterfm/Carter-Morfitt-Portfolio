@@ -220,7 +220,10 @@ main section {
     list-style-type: none;
 }
 
-
+/*I initially handled my Contact Me section with nav, but for some reason I was having trouble
+getting the links to switch to formatting vertically when the app ran in mobile dimensions.
+There was probably something simple I was missing, but the way I have it now achieves the
+look I desired. I might return later and work on this some more.*/
 #contact-me ul li {
     display: inline;
     margin: 1.5rem;
