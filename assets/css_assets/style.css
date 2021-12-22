@@ -20,7 +20,7 @@ body {
 }
 
 
-/* */
+/**/
 header {
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +47,7 @@ header nav {
     justify-content: space-evenly;
 }
 
-/*I've set up the nave bar to appear in-line with the header*/
+/*I've set up the nav bar to appear in-line with the header*/
 header nav a {
     display: inline;
 
@@ -69,7 +69,6 @@ main {
     color: var(--grey-blue);
 }
 
-/*I'm giving the main content blocks 80% of the horizontal*/
 main aside {
     width: 20%;
     margin-right: 1rem;
@@ -82,6 +81,7 @@ main aside h1 {
     font-size: 2.5rem;
 }
 
+/*I want the content to shrink more quickly than the aside for aesthetic purposes*/
 main section {
     flex-grow: 2;
     flex-shrink: 2;
@@ -121,27 +121,12 @@ main section {
     color: var(--dark);
 }
 
-/*IDs for handling specific sections and the main image of the */
-
-#about-me p {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-}
-
-#recent-work a {
-    position: relative;
-    margin: 1rem;
-    padding: 0.2rem;
-    background-color: var(--light-blue);
-}
-
 .small-image {
     width: 40%;
 }
 
 .small-image .image-holder {
     height: 100px;
-    width: 100%;
     opacity: 50%;
     margin: 0;
     background-image: url("https://i.imgur.com/lzwSM0W.png");
@@ -150,20 +135,7 @@ main section {
     background-repeat: no-repeat;
 }
 
-.small-image h2 {
-    position: absolute;
-    min-width: 150px;
-    padding: 1rem;
-    left: 0px;
-    bottom: 10%;
-
-    text-align: center;
-    
-    background-color: var(--light-blue);
-    color: var(--dark);
-    z-index: 2;
-}
-
+/*Simple code to make the image the user selects plainly visible*/
 .small-image:hover .image-holder, .small-image:active .image-holder, .small-image:focus .image-holder,
 #main-image:hover .image-holder, #main-image:active .image-holder, #main-image:focus .image-holder  {
     opacity: 100%;
@@ -177,12 +149,20 @@ main section {
     bottom: 10%;
     
     background-color: var(--light-blue);
-    
-}
-
-.text-holder h3, .text-holder p {
     text-align: center;
     color: var(--dark);
+}
+
+#about-me p {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+#recent-work a {
+    position: relative;
+    margin: 1rem;
+    padding: 0.2rem;
+    background-color: var(--light-blue);
 }
 
 
@@ -192,7 +172,6 @@ main section {
 
 #main-image .image-holder {
     height: 250px;
-    width: 100%;
     opacity: 50%;
     margin: 0;
     background-image: url("https://i.imgur.com/lzwSM0W.png");
@@ -201,29 +180,15 @@ main section {
     background-repeat: no-repeat;
 }
 
-#main-image h2 {
-    position: absolute;
-    min-width: 150px;
-    padding: 1rem;
-    left: 0px;
-    bottom: 20%;
-
-    text-align: center;
-    
-    background-color: var(--light-blue);
-    color: var(--dark);
-    z-index: 2;
-}
-
+/*I initially handled my Contact Me section with nav, but for some reason I was having trouble
+getting the links to switch to formatting vertically when the app ran in mobile dimensions.
+There was probably something simple I was missing, but the way I have it now achieves the
+look I desired. I might return later and work on this some more.*/
 #contact-me ul {
     margin-top: 1.25rem;
     list-style-type: none;
 }
 
-/*I initially handled my Contact Me section with nav, but for some reason I was having trouble
-getting the links to switch to formatting vertically when the app ran in mobile dimensions.
-There was probably something simple I was missing, but the way I have it now achieves the
-look I desired. I might return later and work on this some more.*/
 #contact-me ul li {
     display: inline;
     margin: 1.5rem;
@@ -232,8 +197,6 @@ look I desired. I might return later and work on this some more.*/
 #contact-me a {
     font-size: 1.25rem;
     color: var(--grey-blue);
-    margin-top: 1rem;
-
     text-decoration-thickness: 0.2rem;
 }
 
@@ -245,6 +208,7 @@ look I desired. I might return later and work on this some more.*/
     header nav's flex-basis to 80% accomplishes this.*/
     header {
         justify-content: center;
+        padding-left: 1.25rem;
     }
 
     header h1 {
@@ -255,7 +219,7 @@ look I desired. I might return later and work on this some more.*/
         flex-basis: 80%;
     }
 
-    /*I'm adjusting the main content block to put the section titles (*/
+    /*I'm adjusting the main content block to format vertically when in mobile mode*/
     main aside {
         margin-right: 0;
         width: 90%;
@@ -272,12 +236,7 @@ look I desired. I might return later and work on this some more.*/
         border-left: none;
     }
 
-    main section p {
-        margin: 1rem;
-        margin-bottom: 0;
-    }
-
-        /*Slightly decreasing the height of the hero image so it doesn't take up too much
+    /*Slightly decreasing the height of the hero image so it doesn't take up too much
     screen real estate on mobile devices*/
     .hero-image {
         height: 150px;
@@ -287,13 +246,17 @@ look I desired. I might return later and work on this some more.*/
         width: 90%;
     }
 
+    #about-me p {
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+
     #contact-me ul {
         margin-top: 0;
     }
 
     #contact-me ul li {
         display: block;
-        margin: 1.5rem;
     }    
 
 }
