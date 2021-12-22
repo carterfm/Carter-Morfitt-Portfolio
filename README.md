@@ -8,11 +8,13 @@ The entire page is formatted to respond dynamically to screen size changes, and 
 
 Screenshots of finished app:
 
+Desktop Version:
+
 - ![Desktop Screenshot 1](https://i.imgur.com/tmA9K23.png)
 
 - ![Desktop Screenshot 2](https://i.imgur.com/HIuQgCv.png)
 
-- ![Mobile Screenshot 1](https://i.imgur.com/TvR9wPL.png)
+Mobile Version:
 
 - ![Mobile Screenshot 1](https://i.imgur.com/TvR9wPL.png)
 
@@ -22,7 +24,7 @@ Screenshots of finished app:
 
 Image Sources:
 
-- ![Hero image (this is the only image so far that wasn't a screenshot of a class resource)](https://unsplash.com/photos/QMDap1TAu0g)
+- [Hero image (this is the only image so far that wasn't a screenshot of a class resource)](https://unsplash.com/photos/QMDap1TAu0g)
 
 Link to deployed app:
 
