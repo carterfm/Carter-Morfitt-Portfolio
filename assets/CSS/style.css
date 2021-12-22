@@ -129,18 +129,17 @@ main section {
 }
 
 #recent-work a {
+    position: relative;
     margin: 1rem;
+    padding: 0.2rem;
+    background-color: var(--light-blue);
 }
-
-/*#recent-work .small-image {
-
-}*/
 
 .small-image {
     width: 40%;
 }
 
-.small-image > div {
+.small-image .image-holder {
     height: 100px;
     width: 100%;
     opacity: 50%;
@@ -151,13 +150,48 @@ main section {
     background-repeat: no-repeat;
 }
 
+.small-image h2 {
+    position: absolute;
+    min-width: 150px;
+    padding: 1rem;
+    left: 0px;
+    bottom: 10%;
+
+    text-align: center;
+    
+    background-color: var(--light-blue);
+    color: var(--dark);
+    z-index: 2;
+}
+
+.small-image:hover .image-holder, .small-image:active .image-holder, .small-image:focus .image-holder,
+#main-image:hover .image-holder, #main-image:active .image-holder, #main-image:focus .image-holder  {
+    opacity: 100%;
+}
+
+.text-holder {
+    position: absolute;
+    min-width: 150px;
+    padding: 1rem 0.5rem;
+    left: 0px;
+    bottom: 10%;
+    
+    background-color: var(--light-blue);
+    
+}
+
+.text-holder h3, .text-holder p {
+    text-align: center;
+    color: var(--dark);
+}
+
 
 #main-image {
     width: 90%;
 }
 
-#main-image > div {
-    height: 200px;
+#main-image .image-holder {
+    height: 250px;
     width: 100%;
     opacity: 50%;
     margin: 0;
@@ -167,9 +201,39 @@ main section {
     background-repeat: no-repeat;
 }
 
-.small-image:hover > div, #main-image:hover > div {
-    opacity: 100%;
+#main-image h2 {
+    position: absolute;
+    min-width: 150px;
+    padding: 1rem;
+    left: 0px;
+    bottom: 20%;
+
+    text-align: center;
+    
+    background-color: var(--light-blue);
+    color: var(--dark);
+    z-index: 2;
 }
+
+#contact-me ul {
+    margin-top: 1.25rem;
+    list-style-type: none;
+}
+
+
+#contact-me ul li {
+    display: inline;
+    margin: 1.5rem;
+}
+
+#contact-me a {
+    font-size: 1.25rem;
+    color: var(--grey-blue);
+    margin-top: 1rem;
+
+    text-decoration-thickness: 0.2rem;
+}
+
 
 @media screen and (max-width: 768px){
 
@@ -184,7 +248,7 @@ main section {
         text-align: center;
     }
 
-    header nav {
+    header nav {            
         flex-basis: 80%;
     }
 
@@ -219,6 +283,15 @@ main section {
     .small-image {
         width: 90%;
     }
+
+    #contact-me ul {
+        margin-top: 0;
+    }
+
+    #contact-me ul li {
+        display: block;
+        margin: 1.5rem;
+    }    
 
 }
 
