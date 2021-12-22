@@ -58,7 +58,7 @@ header nav a {
     text-decoration-thickness: 0.2rem;
 }
 
-header nav a:hover {
+header nav a:hover, header nav a:focus, header nav a:active{
     color: white;
 }
 
@@ -204,7 +204,7 @@ look I desired. I might return later and work on this some more.*/
     text-decoration-thickness: 0.2rem;
 }
 
-#contact-me a:hover {
+#contact-me a:hover, #contact-me a:focus, #contact-me a:active {
     color: var(--light-blue);
 }
 
