@@ -133,7 +133,6 @@ main section {
     height: 100px;
     opacity: 50%;
     margin: 0;
-    background-image: url("https://i.imgur.com/lzwSM0W.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -178,10 +177,26 @@ main section {
     height: 250px;
     opacity: 50%;
     margin: 0;
-    background-image: url("https://i.imgur.com/lzwSM0W.png");
+    background-image: url("https://camo.githubusercontent.com/8e24df195f9b8bf41ca11e36348ca650f9632ecbb2b65ddd99f717515330ffd1/68747470733a2f2f692e696d6775722e636f6d2f306850453979382e706e67");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#small-1 .image-holder {
+    background-image: url("https://camo.githubusercontent.com/d868c304fbd8ee0d7284f9dbea92be8bd7ce995f36700885c7db4b84aaf0a7e1/68747470733a2f2f692e696d6775722e636f6d2f766432506136682e706e67");
+}
+
+#small-2 .image-holder {
+    background-image: url("https://camo.githubusercontent.com/410543f8f1f0e7d7f2808d39cb3ea861472f1bcfb4a910a3fa70809537971be4/68747470733a2f2f692e696d6775722e636f6d2f7446396e3145722e706e67");
+}
+
+#small-3 .image-holder {
+    background-image: url("https://camo.githubusercontent.com/2bf9d4eb60052e486c5e7e1fd3d4567c64fd2db73ca19c4d0fcfa867f64d7c5c/68747470733a2f2f692e696d6775722e636f6d2f3864644439747a2e706e67");
+}
+
+#small-4 .image-holder {
+    background-image: url("https://camo.githubusercontent.com/9e4e5ff7d43a83195e4fa1833a85cc7b8d07e5fa527fd21c755cff27e06638d5/68747470733a2f2f692e696d6775722e636f6d2f6e5642524d49642e706e67");
 }
 
 /*I initially handled my Contact Me section with nav, but for some reason I was having trouble
