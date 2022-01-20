@@ -2,8 +2,8 @@
 ## Description
 In this project, I built a portfolio page from scratch. The page includes an 'About Me', 'Recent Work', and 'Contact Me' section, with a navbar in the header that links to each of these sections. 
 
-The 'Recent Work' section contains five images which double as links to my other live projects. Or rather, it will; at present, all the images are placeholders that link to a screenshot of a mock-up portfolio.
-
+The 'Recent Work' section contains five images which double as links to my other live projects.
+  
 The entire page is formatted to respond dynamically to screen size changes, and has both a desktop and mobile layout. 
 
 Screenshots of finished app:
